@@ -1,0 +1,192 @@
+/* =========================
+   HERO CONTAINER
+========================= */
+.hero {
+  min-height: 100vh;
+  width: 100%;
+  background: #000;
+  color: #fff;
+  padding: 20px 80px 60px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+/* =========================
+   LEFT SIDE
+========================= */
+.hero-left {
+  max-width: 420px;
+}
+
+.hero-work {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #e0e0e0;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* =========================
+   CENTER
+========================= */
+.hero-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* =========================
+   HERO IMAGE
+========================= */
+.hero-img {
+  width: 380px;
+  height: 760px;
+  object-fit: cover;
+  margin-top: 120px;
+  position: absolute;
+  border-radius: 10%;
+}
+
+/* =========================
+   HERO TITLE (IMPORTANT)
+========================= */
+.hero-title,
+.hero-title span {
+  font-family: 'Tanker', sans-serif;
+  font-weight: 900;
+  font-size: 160px;        /* 👈 DESKTOP SIZE */
+  letter-spacing: 10px;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+/* =========================
+   CONTACT BUTTON
+========================= */
+.contact-btn {
+  position: absolute;
+  top: 520px;
+  right: 60px;
+  padding: 12px 28px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  background: linear-gradient(135deg, #ff4dff, #4d94ff);
+  color: white;
+  transition: 0.3s ease;
+  font-family: 'Poppins', sans-serif;
+}
+
+.contact-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(255, 77, 255, 0.5);
+}
+
+/* =========================
+   MOBILE STYLES
+========================= */
+@media (max-width: 900px) {
+
+  .hero {
+    padding: 120px 24px 40px;
+    text-align: center;
+  }
+
+  .hero-img {
+    width: 150px;
+    height: 280px;
+    margin-top: 40px;
+  }
+
+  .hero-title,
+  .hero-title span {
+    font-size: 50px;     /* 👈 MOBILE SIZE */
+    letter-spacing: 6px;
+
+  margin-top: -30px;
+  }
+
+  .hero-work {
+    font-size: 0.9rem;
+    margin-top: 260px;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .contact-btn {
+    top: 380px;
+    right: 50%;
+    transform: translateX(50%);
+    font-size: 14px;
+    padding: 10px 22px;
+  }
+
+  .custom-nav {
+    display: none;
+  }
+
+  .mobile-menu-btn {
+  
+   margin-left: 280px;
+   margin-top: -180px;
+    z-index: 1050;
+    font-size: 1.8rem;
+  }
+}
+
+/* =========================
+   OFFCANVAS
+========================= */
+.custom-offcanvas {
+  background-color: #000 !important;
+}
+
+.offcanvas-menu {
+  list-style: none;
+  padding: 0;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.offcanvas-btn {
+  display: block;
+  width: 100%;
+  padding: 14px 20px;
+  background: #fff;
+  color: #000;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: 0.3s ease;
+}
+
+.offcanvas-btn:hover {
+  background: #000;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+@media (min-width: 900px) {
+  .mobile-menu-btn {
+    display: none;
+  }
+
+  .mobile-menu-btn{
+    display: none;
+  }
+
+  .bi-list{
+    display: none;
+  }
+}
+
+.contact-btn{
+  text-decoration: none;
+}
+

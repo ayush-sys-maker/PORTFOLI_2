@@ -8,19 +8,19 @@ function Project() {
   const items = [
     {
       image: "bl.png",
-      link: "https://google.com/",
+      link: "https://bl-marketing-e-commerce-store-1.onrender.com/home",
       title: "E-COMMERCE WEBSITE",
       description: "BUILDED A BEAUTIFUL STORE USING MERN STACK"
     },
     {
       image: "cook.png",
-      link: "https://google.com/",
+      link: "https://github.com/ayush-sys-maker/COOKWITHME.git",
       title: "COOKING ASSISTANT",
       description: "A COOKING ASSISTANT HELPS IN COOKING"
     },
     {
       image: "logo.png",
-      link: "https://google.com/",
+      link: "https://thevigneshwaragrandhotels.com/",
       title: "RESTAURANT SITE",
       description: "BEAUTIFUL RESTAURANT SITE TO GET MORE COUSTOMERS?"
     }

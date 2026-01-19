@@ -1,0 +1,170 @@
+/* MAIN FOOTER */
+.Footer {
+  width: 100%;
+  background: #000;
+  color: #fff;
+  padding: 80px 5%;
+  position: relative;
+  overflow: hidden;
+   box-sizing: border-box;
+}
+
+/* BACKGROUND LIGHT RAYS */
+.footer-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;               /* BEHIND the content */
+  pointer-events: none;
+  overflow: hidden;
+}
+
+/* FOOTER CONTENT ON TOP */
+.footer-content {
+  position: relative;
+  z-index: 5;               /* ABOVE background */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 70px;
+
+  
+}
+
+/* LEFT NAME */
+.footer-name {
+  font-size: clamp(1.5rem, 1vw, 1rem);
+  font-weight: 900;
+  letter-spacing: 2px;
+  opacity: 0.9;
+font-family: 'Comico', cursive;}
+
+/* CENTER SECTION */
+.footer-center {
+  text-align: center;
+  max-width: 550px;
+   font-family: 'Poppins', sans-serif;
+
+}
+
+.footer-desc {
+  font-size: 1.1rem;
+  opacity: 0.85;
+  margin-bottom: 20px;
+  line-height: 1.6;
+   font-family: 'Poppins', sans-serif;
+
+}
+
+/* GET IN TOUCH BUTTON */
+.footer-btn-touch {
+  padding: 14px 28px;
+  background: linear-gradient(90deg, #40ffaa, #4079ff);
+  color: #000;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+  margin-top: 20px;
+   font-family: 'Poppins', sans-serif;
+
+}
+
+.footer-btn-touch:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 18px rgba(64, 255, 170, 0.4);
+}
+
+/* RIGHT SIDE BUTTON */
+.hire-btn {
+  padding: 14px 32px;
+  background: #111;
+  border: 2px solid #ffffff33;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  color: white;
+   font-family: 'Poppins', sans-serif;
+
+}
+
+.hire-btn:hover {
+  background: #fff;
+  color: #000;
+  transform: translateY(-3px);
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+
+
+@media (max-width: 900px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+    margin-right: 0;
+  }
+
+  .footer-name {
+    font-size: 1.3rem;
+  }
+
+  .footer-center {
+    max-width: 100%;
+  }
+
+  .footer-desc {
+    font-size: 1rem;
+  }
+
+  .footer-btn-touch {
+    font-size: 1rem;
+    padding: 12px 24px;
+  }
+
+  .hire-btn {
+    font-size: 1rem;
+    padding: 12px 26px;
+  }
+}
+
+/* SMALL MOBILE */
+@media (max-width: 480px) {
+  .Footer {
+    padding: 60px 6%;
+  }
+
+  .footer-name {
+    font-size: 1.1rem;
+    letter-spacing: 1.5px;
+  }
+
+  .footer-desc {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  .footer-btn-touch,
+  .hire-btn {
+    width: 100%;
+    max-width: 160px;
+  }
+}
+
+.footer-name{
+  text-decoration: none;
+  color: white;
+}

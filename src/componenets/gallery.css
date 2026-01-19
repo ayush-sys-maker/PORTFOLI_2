@@ -1,0 +1,78 @@
+/* =====================================
+   GALLERY GRID LAYOUT (4 CARDS)
+===================================== */
+.gallery {
+ background-color: black;
+ display: block;
+ justify-content:center;
+ box-sizing: border-box;
+}
+.gallery-img{
+      display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  padding: 40px;
+  justify-items: center;
+  
+  overflow-x: hidden;
+  max-width:100%; /* Keeps grid inside safe width */
+ 
+}
+
+.gallery-txt{
+  font-family: 'Tanker', sans-serif;
+  letter-spacing: 5px;
+}
+
+/* Card styling is inherited from SpotlightCard.css */
+.ecom-card {
+  width: 100%;
+  max-width: 420px;
+}
+.card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.popup-card {
+  opacity: 0;
+  transform: translateY(60px) scale(0.95);
+  transition: all 0.8s ease-out;
+}
+
+.popup-card.popup-show {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+
+/* =====================================
+   RESPONSIVE LAYOUT
+===================================== */
+
+@media (max-width: 900px) {
+  .gallery-img {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    padding: 30px;
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 600px) {
+  .gallery-img {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .ecom-card {
+    max-width: 100%;
+  }
+
+  .gallery-txt {
+    font-size: 1.8rem;
+    letter-spacing: 3px;
+  }
+}

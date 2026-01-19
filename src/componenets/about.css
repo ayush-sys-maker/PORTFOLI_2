@@ -1,0 +1,169 @@
+.grid{
+    background-color: black;
+}
+
+/* -------------------- ABOUT HEADING SECTION ---------------------- */
+
+.about-content {
+  position: absolute;
+  top: 12%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  width: 100%;
+  max-width: 700px;
+}
+
+/* HERO TITLE */
+.About-title {
+  font-size: clamp(3.5rem, 6vw, 6.5rem);
+  font-weight: 900;
+  letter-spacing: 2px;
+ font-family: 'Tanker', sans-serif;
+}
+
+
+@media (min-width:992px) {
+  .hero-title {
+  font-size: clamp(3.5rem, 6vw, 6.5rem);
+  font-weight: 900;
+  letter-spacing: 2px;
+padding-top: 180px;
+}
+
+.styled-button{
+  margin-top: 40px;
+}
+}
+/* ---------------------- PARAGRAPH SECTION ------------------------ */
+
+.para {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+  max-width: 900px;
+  padding: 10px;
+   font-family: 'Poppins', sans-serif;
+  
+}
+
+.scroll-text {
+  font-size: clamp(0.9rem, 2vw, 1.2rem);
+  line-height: 1.7;
+  color: #eaeaea;
+}
+
+/* ---------------------- BUTTON SECTION ------------------------ */
+
+.styled-button {
+  position: absolute;
+  left: 50%;
+  top: 88%;
+  transform: translateX(-50%);
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #ffffff;
+  background: linear-gradient(to bottom, #171717, #242424);
+  border-radius: 9999px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 1), 0 10px 20px rgba(0, 0, 0, 0.4);
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #292929;
+}
+
+.styled-button .inner-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom, #171717, #242424);
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
+  border-radius: 50%;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 1);
+  border: 1px solid #252525;
+  transition: all 0.2s ease;
+}
+
+
+/* ---------------------- MOBILE RESPONSIVE ------------------------ */
+/* ---------------------- MOBILE RESPONSIVE ------------------------ */
+@media (max-width: 768px) {
+
+
+
+  .about-content {
+    top: 16%;
+  }
+
+  /* FORCE SplitText title to shrink */
+  .hero-title {
+    font-size: 2.2rem !important;
+    letter-spacing: 2px;
+  }
+
+  .para {
+    top: 300px !important;
+    width: 90% !important  ;
+    padding: 10px !important;
+  
+  }
+
+  .scroll-text {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  .styled-button {
+    top: 98% !important;
+    padding: 0.8rem 1.5rem;
+    font-size: 0.85rem;
+  }
+
+  .styled-button .inner-button {
+    width: 34px;
+    height: 34px;
+  }
+}
+
+/* ---------------------- SMALL MOBILE ------------------------ */
+@media (max-width: 480px) {
+
+  .hero-title {
+    font-size: 1.8rem !important;
+    letter-spacing: 1.5px;
+  }
+
+  .para {
+    top: 60%;
+    width: 90%;
+    padding: 0;
+  }
+
+  .scroll-text {
+    font-size: 0.9rem;
+  }
+
+  .styled-button {
+    top: 94%;
+    padding: 0.7rem 1.3rem;
+  }
+
+  .styled-button .inner-button {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.btn-name{
+  text-decoration: none;
+  color: white;
+}

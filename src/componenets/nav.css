@@ -1,0 +1,71 @@
+.navbar {
+  width: 100%;
+  padding: 18px 0;
+  background: black;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-center {
+  display: flex;
+  list-style: none;
+  gap: 250px; /* 🔥 increase this number for even bigger spacing */
+}
+.nav-center li {
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: 0.3s;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.nav-center li:hover {
+  color: #cfcfcf;
+}
+
+.custom-offcanvas {
+  background-color: #000 !important;
+}
+
+/* REMOVE DEFAULT LIST STYLE */
+.offcanvas-menu {
+  list-style: none;
+  padding: 0;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* BUTTON STYLE */
+.offcanvas-btn {
+  display: block;
+  width: 100%;
+  padding: 14px 20px;
+  background: #fff;
+  color: #000;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+/* HOVER EFFECT */
+.offcanvas-btn:hover {
+  background: #000;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+/* MOBILE MENU BUTTON POSITION */
+.mobile-menu-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1050;
+}

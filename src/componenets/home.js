@@ -56,7 +56,7 @@ function Hero() {
   target="_blank"
   rel="noopener noreferrer"
   className="offcanvas-btn"
-  data-bs-dismiss="offcanvas"
+
 >
   Github
 </a>
@@ -66,7 +66,7 @@ function Hero() {
         <a
           href="#gallery"
           className="offcanvas-btn"
-          data-bs-dismiss="offcanvas"
+        
         >
           Services
         </a>
@@ -76,7 +76,7 @@ function Hero() {
         <a
           href="#project"
           className="offcanvas-btn"
-          data-bs-dismiss="offcanvas"
+        
         >
           Projects
         </a>
@@ -88,7 +88,7 @@ function Hero() {
           target="_blank"
           rel="noreferrer"
           className="offcanvas-btn"
-          data-bs-dismiss="offcanvas"
+      
         >
           Contact
         </a>
